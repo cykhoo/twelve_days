@@ -1,16 +1,20 @@
 class TwelveDays
 
   def sing_verse(day_number)
+
     if day_number == 1
       intro(1) + verse(1) + "."
     elsif day_number == 2
-      intro(2) + "two turtle doves and " + verse(1) + "."
+      intro(2) + verse(2) + " and " + verse(1) + "."
     end
+
   end
 
   def verse(day_number)
     if day_number == 1
       "a partridge in a pear tree"
+    elsif day_number == 2
+      "two turtle doves"
     end
   end
 
