@@ -17,4 +17,8 @@ describe "verse method" do
   it "verse 3" do
     expect(TwelveDays.new.verse(3)).to eq("three French hens")
   end
+
+  it "deals with unknown day numbers" do
+    expect(TwelveDays.new.verse(9999999999)).to eq("DONTKNOW ")
+  end
 end
