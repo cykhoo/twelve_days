@@ -16,11 +16,9 @@ class TwelveDays
 
   def intro(day_number)
 
-    if day_number == 1
-      day_number_in_words = "first"
-    elsif day_number == 2
-      day_number_in_words = "second"
-    end
+    day_numbers_in_words = { 1 => "first", 2 => "second" }
+
+    day_number_in_words = day_numbers_in_words[day_number]
 
     "On the " + day_number_in_words + " day of Christmas, my true love gave to me "
   end
