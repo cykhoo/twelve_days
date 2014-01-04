@@ -25,11 +25,11 @@ class TwelveDays
   end
 
   def intro(day_number)
+    "On the " + convert_day_number_to_words(day_number) + " day of Christmas, my true love gave to me "
+  end
 
+  def convert_day_number_to_words(day_number)
     day_numbers_in_words = { 1 => "first", 2 => "second", 3 => "third" }
-
     day_number_in_words = day_numbers_in_words[day_number]
-
-    "On the " + day_number_in_words + " day of Christmas, my true love gave to me "
   end
 end
